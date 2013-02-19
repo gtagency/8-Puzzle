@@ -3,6 +3,8 @@ from sys import exit
 from time import sleep
 from astar import *
 
+
+# This class is used to run the UI and run the logic to handle the updates that astar gives the puzzle
 class PuzzleApp:
     def __init__(self,master,puzzle,goalState):
         self.frame = Frame(master)
@@ -88,6 +90,7 @@ class PuzzleApp:
             self.goalState[piecei][piecej] = 0
             self.update_goal(self.goalState)
 
+#Main function
 examplePuzzle = [[2,1,6],[4,0,8],[7,5,3]]
 goalState = [[1,2,3],[8,0,4],[7,6,5]]
 root = Tk()
