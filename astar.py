@@ -3,12 +3,7 @@ from heapq import *
 
 # Change the heuristic to see if you can improve it!
 def heuristic_evaluation(puzzle, goalState): 
-	missed = 0
-	for i in range(len(puzzle)):
-		for j in range(len(puzzle[0])):
-			if(puzzle[i][j] != goalState[i][j]):
-				missed+=1
-	return missed
+	return 0
 
 def astar(puzzle,goalState,heuristic):
   explored = []
